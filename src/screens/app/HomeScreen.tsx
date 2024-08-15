@@ -40,7 +40,7 @@ export function Home({ navigation }: Props) {
 
   return (
     <View style={styles.container}>
-      <Text>You are logged in as {user?.name}</Text>
+      <Text>Bienvenido {user?.name}</Text>
 
       <Button onPress={onLogout} title={"Log Out"} />
       <Button 
