@@ -52,9 +52,7 @@ export function Home({ navigation }: Props) {
   const features = [
     { id: 1, imageUrl: require('../../assets/icons/mis_lotes.png'), label: "Mis lotes" },
     { id: 2, imageUrl: require('../../assets/icons/mi_perfil.png'), label: "Mi perfil", action: () => navigation.navigate('UserProfile') },
-    { id: 3, imageUrl: require('../../assets/icons/agregar_trabajador.png'), label: "Crear un usuario\ntrabajador" },
-    { id: 4, imageUrl: require('../../assets/icons/ver_mis_trabajadores.png'), label: "Ver mis\ntrabajadores" },
-    { id: 5, imageUrl: require('../../assets/icons/cerrar_sesion.png'), label: "Cerrar sesión", action: onLogout },
+    { id: 3, imageUrl: require('../../assets/icons/cerrar_sesion.png'), label: "Cerrar sesión", action: onLogout },
   ];
 
   const featureRows = [];
