@@ -14,7 +14,11 @@ function App(): React.JSX.Element {
       domain="dev-kllowhtqsd8qirzp.us.auth0.com"
       clientId="UgFSXXSReYqZJfEcJRewwoQUmJ7TjU0w"
     >
-      <AppNav />
+      <ApiContextProvider>
+        <AppContextProvider>
+          <AppNav />
+        </AppContextProvider>
+      </ApiContextProvider>
     </Auth0Provider>
   );
 }

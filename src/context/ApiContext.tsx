@@ -32,7 +32,7 @@ export const ApiContextProvider: React.FC<PropsWithChildren> = (props) => {
       return { data: null, status: "error", message: "Token not ready yet" };
     }
     try {
-      const res = await fetch(`${process.env.REACT_APP_API_URL as string}${apiData.endpoint}`, {
+      const res = await fetch(`https://vip.wango.pro/v1/${apiData.endpoint}`, {
         method: apiData.method,
         headers: {
           Authorization: `Bearer ${userToken}`,
