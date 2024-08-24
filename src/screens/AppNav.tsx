@@ -1,7 +1,9 @@
 import { View, StyleSheet } from "react-native";
 import FastImage from "react-native-fast-image";
 import { NavigationContainer } from "@react-navigation/native";
+
 import { useAuth0 } from "react-native-auth0";
+
 import AppStack from "./AppStack";
 import { Auth } from "./auth/AuthScreen";
 

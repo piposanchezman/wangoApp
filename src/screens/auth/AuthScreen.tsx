@@ -36,12 +36,14 @@ export function Auth() {
     const contentOffsetX = event.nativeEvent.contentOffset.x;
     const index = Math.round(contentOffsetX / windowWidth);
     setCurrentIndex(index);
+    console.log(index);
   };
 
   const scrollToNext = () => {
     if (currentIndex < Slides.length - 1 && ref.current) {
       ref.current.scrollToIndex({ index: currentIndex + 1, animated: true });
       setCurrentIndex(currentIndex + 1);
+      console.log(currentIndex);
     } else if (currentIndex === Slides.length - 1) {
       authorize({
         audience: "https://vip.wango.pro/",
