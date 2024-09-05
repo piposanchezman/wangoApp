@@ -13,8 +13,10 @@ function AppStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       {userData && userData.security.identity_verified ? (
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="UserProfile" component={UserProfile} />
+        <>
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="UserProfile" component={UserProfile} />
+        </>
       ) : (
         <Stack.Screen name="Register" component={Register} />
       )}
